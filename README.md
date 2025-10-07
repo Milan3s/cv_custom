@@ -8,6 +8,18 @@
 
 ---
 
+## 🚀 Tecnologías Utilizadas
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![PDO](https://img.shields.io/badge/PDO-Database%20Access-lightgrey?style=for-the-badge)
+![POO](https://img.shields.io/badge/POO-Orientado%20a%20Objetos-blue?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+---
+
 ## 📋 Prerrequisitos
 
 Antes de comenzar, asegúrate de tener instalado:
@@ -41,13 +53,15 @@ Clona o copia el repositorio del proyecto `cv_custom` en tu carpeta de servidor 
 
 2. Crea una nueva base de datos llamada:
 
-   cv_custom   
+   ```
+   cv_custom
+   ```
 
 3. Haz clic en **Importar** y selecciona el archivo SQL del proyecto:
-   
-   cv_custom.sql
-   
-   (o el archivo SQL que te haya sido proporcionado con el proyecto).
+
+   ```
+   /cv_custom/mvc/database/cv_custom.sql
+   ```
 
 4. Pulsa **Continuar** para ejecutar la importación.
 
@@ -55,7 +69,13 @@ Clona o copia el repositorio del proyecto `cv_custom` en tu carpeta de servidor 
 
 ## ⚙️ Paso 3: Configuración del Proyecto
 
-No es necesario usar `.env`, pero asegúrate de que tu configuración de conexión a la base de datos (en el archivo PHP correspondiente, normalmente `config/database.php` o similar) tenga lo siguiente:
+Edita la configuración de conexión a la base de datos, normalmente ubicada en:
+
+```
+/mvc/config/database.php
+```
+
+Ejemplo:
 
 ```php
 $host = '127.0.0.1';
@@ -63,6 +83,8 @@ $dbname = 'cv_custom';
 $username = 'root';
 $password = '';
 ```
+
+No se requiere archivo `.env` para este proyecto.
 
 ---
 
@@ -94,19 +116,39 @@ http://localhost/cv_custom/index.php
 
 ---
 
-## 🧩 Tecnologías Usadas
+## 🧩 Estructura del Proyecto
 
-- **PHP 8+**
-- **MySQL / phpMyAdmin**
-- **PDO (PHP Data Objects)**
-- **Programación Orientada a Objetos (POO)**
-- **HTML / CSS / JavaScript**
+```
+cv_custom/
+│
+├── assets/                   # Recursos estáticos (CSS, JS, imágenes)
+├── mvc/
+│   ├── ajax/                 # Peticiones asíncronas
+│   ├── config/               # Configuración y conexión DB
+│   ├── controllers/          # Controladores MVC
+│   ├── models/               # Modelos (lógica de negocio y consultas)
+│   ├── noperimitido/         # Páginas de error/acceso denegado
+│   ├── partials/             # Componentes comunes (header, footer)
+│   └── views/                # Vistas del sistema
+│       ├── acceder/          # Login, logout y registro
+│       ├── certificados/
+│       ├── educacion/
+│       ├── experiencia/
+│       ├── habilidades/
+│       ├── otros-datos/
+│       ├── perfil/
+│       ├── redes/
+│       └── secciones/
+└── index.php                 # Punto de entrada principal
+```
 
 ---
 
 ## ⚡ Descripción
 
-Este proyecto es un **CRUD completo (Crear, Leer, Actualizar y Eliminar)** de un **Currículum Vitae personal**, desarrollado en **PHP con POO y PDO**, con una interfaz de administración para gestionar:
+**CV Custom** es un sistema CRUD completo para la gestión de un **Currículum Vitae profesional**, desarrollado en **PHP (POO + PDO)** y **MySQL**.
+
+Permite administrar desde un panel seguro la información del usuario, incluyendo:
 
 - Certificados  
 - Educación  
@@ -115,7 +157,7 @@ Este proyecto es un **CRUD completo (Crear, Leer, Actualizar y Eliminar)** de un
 - Perfil profesional  
 - Redes sociales  
 - Secciones del CV  
-- Usuarios  
+- Usuarios y autenticación
 
 ---
 
@@ -125,3 +167,7 @@ Este proyecto es un **CRUD completo (Crear, Leer, Actualizar y Eliminar)** de un
 📌 **Proyecto:** CV Custom  
 🗓️ **Base de datos:** MySQL (phpMyAdmin)  
 💻 **Tecnología:** PHP + PDO + POO  
+
+---
+
+© 2025 - Proyecto educativo y de libre uso.
