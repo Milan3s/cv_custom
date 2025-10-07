@@ -1,13 +1,5 @@
 # 📄 Guía de Instalación - CV Custom (CRUD PHP MySQL POO PDO)
 
-<p align="center">
-  <a href="https://www.php.net/" target="_blank">
-    <img src="https://www.php.net/images/logos/new-php-logo.svg" width="200" alt="PHP Logo">
-  </a>
-</p>
-
----
-
 ## 🚀 Tecnologías Utilizadas
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
