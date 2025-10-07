@@ -264,9 +264,10 @@ CREATE TABLE `usuarios` (
 --
 -- Volcado de datos para la tabla `usuarios`
 --
-
+-- Aquí modificar el string poniendo 1 , 'Usuario', 'Contraseña', 'Email'
+-- Registrarlo con el formulario de registro y usarlo luego con el login va hasheado.
 INSERT INTO `usuarios` (`id`, `nombre`, `password`, `email`) VALUES
-(1, 'David', '$2y$10$By0L8E3FgKDDchTOH9tNPeygBJLeWIomWh6A1hAcWegaC0yHiv3eG', 'dmilanestrabajo@gmail.com');
+(, '', '', '');
 
 --
 -- Índices para tablas volcadas
