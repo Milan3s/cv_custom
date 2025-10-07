@@ -1,0 +1,306 @@
+[2025-10-02 23:45:13] GET.php → datos enviados al cliente → Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [usuario_id] => 1
+            [tipo] => frontend
+            [nombre] => x
+            [descripcion] => x
+            [seccion_id] => 9
+            [seccion] => Habilidades
+            [orden] => 3
+        )
+
+)
+
+[2025-10-02 23:45:13] edit → datos recibidos de get.php → Array
+(
+    [status] => success
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [usuario_id] => 1
+                    [tipo] => frontend
+                    [nombre] => x
+                    [descripcion] => x
+                    [seccion_id] => 9
+                    [seccion] => Habilidades
+                    [orden] => 3
+                )
+
+        )
+
+)
+
+[2025-10-02 23:45:14] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:46:29] GET.php → datos enviados al cliente → Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [usuario_id] => 1
+            [tipo] => frontend
+            [nombre] => x
+            [descripcion] => x
+            [seccion_id] => 9
+            [seccion] => Habilidades
+            [orden] => 3
+        )
+
+)
+
+[2025-10-02 23:46:29] edit → datos recibidos de get.php → Array
+(
+    [status] => success
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [usuario_id] => 1
+                    [tipo] => frontend
+                    [nombre] => x
+                    [descripcion] => x
+                    [seccion_id] => 9
+                    [seccion] => Habilidades
+                    [orden] => 3
+                )
+
+        )
+
+)
+
+[2025-10-02 23:46:30] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:46:41] GET.php → datos enviados al cliente → Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [usuario_id] => 1
+            [tipo] => frontend
+            [nombre] => x
+            [descripcion] => x
+            [seccion_id] => 9
+            [seccion] => Habilidades
+            [orden] => 3
+        )
+
+)
+
+[2025-10-02 23:46:41] edit → datos recibidos de get.php → Array
+(
+    [status] => success
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [usuario_id] => 1
+                    [tipo] => frontend
+                    [nombre] => x
+                    [descripcion] => x
+                    [seccion_id] => 9
+                    [seccion] => Habilidades
+                    [orden] => 3
+                )
+
+        )
+
+)
+
+[2025-10-02 23:46:42] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:46:48] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:50:17] GET.php → datos enviados al cliente → Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [usuario_id] => 1
+            [tipo] => frontend
+            [nombre] => x
+            [descripcion] => x
+            [seccion_id] => 9
+            [seccion] => Habilidades
+            [orden] => 3
+        )
+
+)
+
+[2025-10-02 23:50:18] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:51:47] GET.php → datos enviados al cliente → Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [usuario_id] => 1
+            [tipo] => frontend
+            [nombre] => x
+            [descripcion] => x
+            [seccion_id] => 9
+            [seccion] => Habilidades
+            [orden] => 3
+        )
+
+)
+
+[2025-10-02 23:51:49] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 3
+)
+
+[2025-10-02 23:51:53] edit → datos enviados a update.php → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [nombre] => x
+    [tipo] => frontend
+    [descripcion] => x
+    [orden] => 2
+    [seccion_id] => 9
+)
+
+[2025-10-02 23:51:53] update.php → datos recibidos → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [nombre] => x
+    [tipo] => frontend
+    [descripcion] => x
+    [orden] => 2
+    [seccion_id] => 9
+)
+
+[2025-10-02 23:51:53] update.php → payload enviado a update() → Array
+(
+    [usuario_id] => 1
+    [nombre] => x
+    [tipo] => frontend
+    [descripcion] => x
+    [seccion_id] => 9
+    [orden] => 2
+)
+
+[2025-10-02 23:51:53] update.php → resultado → Array
+(
+    [id] => 1
+    [success] => 1
+)
+
+[2025-10-02 23:55:04] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => x
+    [descripcion] => x
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 2
+)
+
+[2025-10-02 23:55:07] edit → datos enviados a update.php → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [nombre] => x
+    [tipo] => frontend
+    [descripcion] => x
+    [orden] => 4
+    [seccion_id] => 9
+)
+
+[2025-10-03 20:35:12] insert → datos enviados → Array
+(
+    [seccion_id] => 9
+    [nombre] => Java FX
+    [tipo] => multiplataforma
+    [descripcion] => Lenguaje para apps de escritorio
+    [orden] => 2
+)
+
+[2025-10-07 00:26:12] edit → habilidad seleccionada → Array
+(
+    [id] => 1
+    [usuario_id] => 1
+    [tipo] => frontend
+    [nombre] => HTML
+    [descripcion] => Lenguaje de marcado para la web
+    [seccion_id] => 9
+    [seccion] => Habilidades
+    [orden] => 1
+)
+
+[2025-10-07 00:30:28] insert → datos enviados → Array
+(
+    [seccion_id] => 9
+    [nombre] => x
+    [tipo] => frontend
+    [descripcion] => x
+    [orden] => 5
+)
+

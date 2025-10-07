@@ -1,0 +1,773 @@
+/* ===================================================== */
+/* ===================== FUENTES ======================= */
+/* ===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* ===================================================== */
+/* ===================== LAYOUT GLOBAL ================= */
+/* ===================================================== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  color: #111827;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contenedor-titulo {
+  margin: 12px auto;
+}
+
+/* ===================================================== */
+/* ====================== LAYOUT A4 ==================== */
+/* ===================================================== */
+.a4 {
+  width: 298mm;
+  height: 320mm;
+  margin: 55px auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+}
+
+.left-column {
+  width: 36%;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/* ===================================================== */
+/* ================== ALINEACIÓN PERSONALIZADA ========= */
+/* ===================================================== */
+.align-custom {
+  text-align: left; /* Todo a la izquierda por defecto */
+}
+
+/* Solo centramos lo necesario */
+.align-custom .perfil-section,
+.align-custom .perfil-section * {
+  text-align: center;
+}
+
+/* Títulos laterales */
+.align-custom .section-title-front {
+  text-align: left;
+  display: inline-block;
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-style: italic;
+  color: #111827;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 2px;
+  margin-bottom: 12px;
+}
+
+/* Texto y redes alineados correctamente */
+.align-custom ul,
+.align-custom p,
+.align-custom .contenedor-redes {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.btn-paginacion {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-paginacion:hover {
+  background-color: #f2f2f2;
+  border-color: #999;
+  color: #000;
+}
+
+.btn-paginacion.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #eee;
+}
+
+.paginacion-contador {
+  font-weight: 600;
+  color: #333;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+
+/* ===================================================== */
+/* ======================= CV TABS ===================== */
+/* ===================================================== */
+.cv-tabs {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 22px 0;
+  padding: 0;
+}
+
+.cv-tabs .tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  margin: 8px 0 18px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 10px;
+}
+
+.cv-tabs .tab-btn {
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  background: #f3f4f6;
+  font-weight: 600;
+  font-size: .95rem;
+  color: #374151;
+  cursor: pointer;
+  transition: all .25s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.cv-tabs .tab-btn:hover {
+  background: #e5e7eb;
+  color: #111827;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+.cv-tabs .tab-btn.active {
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,.12);
+  transform: translateY(-1px);
+}
+
+.cv-tabs .tabs-panels {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding-top: 12px;
+  min-height: 600px;
+}
+
+.cv-tabs .tab-panel {
+  display: none;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity .25s ease, transform .25s ease;
+}
+
+.cv-tabs .tab-panel.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ===================================================== */
+/* ================= TITULOS (Subrayado limpio) ========= */
+/* ===================================================== */
+h3.section-title-front,
+h4.section-title-front,
+.section-title {
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: 700;
+  font-style: italic;
+  color: #111827;
+  text-align: left;
+  position: relative;
+  margin: 1.6rem 0 1.2rem;
+  padding-bottom: 0.25rem;
+  display: inline-block;
+  border-bottom: 2px solid #111827;
+}
+
+h3.section-title-front { font-size: 1.6rem; }
+h4.section-title-front, .section-title { font-size: 1rem; }
+
+/* ===================================================== */
+/* ================== COLUMNA IZQUIERDA ================ */
+/* ===================================================== */
+ul.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+ul.list-unstyled.mb-0.ps-1 {
+  text-align: left;
+}
+
+section.bio-section { text-align: left; }
+
+/* ===================================================== */
+/* ================== REDES SOCIALES =================== */
+/* ===================================================== */
+.contenedor-redes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contenedor-redes a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #111827;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.contenedor-redes a i {
+  margin-bottom: 4px;
+  font-size: 1.8rem;
+  color: #111827;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contenedor-redes a:hover,
+.contenedor-redes a:hover i {
+  color: #000;
+  transform: translateY(-3px);
+}
+
+h3#perfil-alias,
+p#perfil-profesion {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ===================================================== */
+/* =================== HABILIDADES GRID ================ */
+/* ===================================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .6rem .8rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skills-grid li {
+  font-size: .95rem;
+  font-weight: 500;
+  color: #111827;
+  font-family: 'Raleway', sans-serif;
+}
+
+.skills-grid li small {
+  font-size: .8rem;
+  color: #6b7280;
+}
+
+/* ===================================================== */
+/* ===================== EXPERIENCIA =================== */
+/* ===================================================== */
+.exp-item {
+  border-left: 3px solid #111827;
+  padding-left: 1rem;
+}
+
+.exp-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 .25rem;
+  color: #111827;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #111827;
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+.exp-company {
+  font-size: .95rem;
+  color: #374151;
+  margin-bottom: .5rem;
+}
+
+.exp-date {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ===================================================== */
+/* ====================== FOOTER ======================= */
+/* ===================================================== */
+footer {
+  position: relative;
+  z-index: 10;
+  background: #111827;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 35px;
+  height: 57px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ===================================================== */
+/* =================== MENÚ MÓVIL NAVBAR =============== */
+/* ===================================================== */
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .4rem 0 .3rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+  z-index: 1000;
+  height: 50px;
+}
+
+.mobile-nav a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #374151;
+  font-size: .85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: all .2s ease;
+  font-family: 'Raleway', sans-serif;
+}
+
+.mobile-nav a i { font-size: 1.25rem; }
+.mobile-nav a span { font-size: .7rem; }
+
+.mobile-nav a.active,
+.mobile-nav a:hover {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* ===================================================== */
+/* ==================== MEDIA QUERIES ================== */
+/* ===================================================== */
+@media (min-width: 577px) {
+  .mobile-nav { display: none; }
+}
+
+@media (min-width: 768px) {
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .skills-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+@media (max-width: 991px) {
+  .a4 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .left-column, .right-column {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body { padding-bottom: 55px; }
+
+  .a4 {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .left-column, .right-column { padding: 15px; }
+
+  .cv-tabs .tabs-nav { display: none; }
+
+  .cv-tabs .tab-panel {
+    display: block !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    height: auto !important;
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .cv-tabs .tab-panel h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #111827;
+    padding-bottom: .5rem;
+    font-family: Consolas, 'Courier New', monospace;
+  }
+
+  .cv-tabs .tab-panel ul { padding-left: 1.2rem; }
+  .cv-tabs .tab-panel li {
+    font-size: 1rem;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+  }
+
+  h4.section-title { display: none; }
+
+  .certificados-list p { margin: 0; font-size: 15px; }
+  .certificados-list i { color: #28a745; }
+
+  section.redes-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 64%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.bio-section {
+    text-align: center;
+    margin-bottom: 48px;
+    margin-top: 10px;
+  }
+
+  ul.list-unstyled {
+      margin-left: 30px;
+      margin-top: -3px;
+  }
+
+  .align-custom .section-title-front {
+      text-align: center;
+      display: inline-block;
+      font-family: Consolas, 'Courier New', monospace;
+      font-weight: 700;
+      font-style: italic;
+      color: #111827;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 2px;
+      margin-bottom: 12px;
+      margin-top: 1px;
+  }
+
+  h4.subir-titulo-perfil {
+    margin-top: -13px;
+  }
+
+  .exp-item {
+    border-left: none !important;
+    padding-left: 1rem;
+  }
+
+  section.seccion-experiencia { margin-bottom: 27px; }
+
+  .paginacion {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 6px;
+  }
+
+  .paginacion .btn-paginacion,
+  .paginacion .paginacion-contador {
+    font-size: 10px !important;     /* más pequeño */
+    padding: 3px 6px !important;    /* menos alto y ancho */
+    margin: 2px !important;
+    line-height: 1.2;
+  }
+
+  .paginacion .paginacion-contador {
+    min-width: 28px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+
+i#estilo-crud {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Suaviza la animación */
+}
+
+i#estilo-crud:hover {
+  transform: scale(1.2); /* Aumenta el tamaño un 20% */
+}
+
+/* ===================================================== */
+/* ========== AJUSTES PARA IMPRESIÓN DE CV SECCIONADO ===== */
+/* ===================================================== */
+@media print {
+
+  /* Ocultar botones, navegación y paginación */
+  .text-center.mb-3,
+  .btn,
+  .btn-outline-dark,
+  .paginacion,
+  footer,
+  .mobile-nav {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Fondo limpio y colores impresos */
+  body {
+    background: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Configurar hoja A4 y eliminar headers/footers del navegador */
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+
+    /* 🔹 Eliminar encabezados y pies (fecha, URL, título, numeración) */
+    @top-left { content: none !important; }
+    @top-center { content: none !important; }
+    @top-right { content: none !important; }
+    @bottom-left { content: none !important; }
+    @bottom-center { content: none !important; }
+    @bottom-right { content: none !important; }
+  }
+
+  /* Estructura general */
+  .a4 {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: column !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 auto !important;
+  }
+
+  /* ===================================================== */
+  /* ============= PORTADA (COLUMNA IZQUIERDA) ============= */
+  /* ===================================================== */
+  .left-column {
+    page-break-after: always !important;
+    break-after: page !important;
+    width: 100% !important;
+    border-right: none !important;
+    background: #f8f9fa !important;
+    text-align: center !important;
+    padding: 20mm 15mm 10mm 15mm !important;
+  }
+
+  .left-column img {
+    margin-top: -10mm !important;
+    margin-bottom: 6mm !important;
+    max-height: 120px !important;
+  }
+
+  .left-column * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  section.bio-section {
+    margin-bottom: 10mm !important;
+  }
+
+/* ===================================================== */
+/* =============== EXPERIENCIA ========================== */
+/* ===================================================== */
+.right-column {
+  width: 100% !important;
+  border: none !important;
+  padding: 20mm 15mm !important;
+  background: #fff !important;
+}
+
+/* Mantener el título general "Experiencia" solo una vez */
+.seccion-experiencia h3.section-title-front {
+  display: block !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  border-bottom: 2px solid #111827 !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 12mm !important;
+  text-transform: uppercase !important;
+}
+
+/* Cada experiencia en una hoja separada */
+.exp-item {
+  page-break-after: always !important;
+  break-after: page !important;
+  margin-bottom: 20mm !important;
+}
+
+/* Quitar los títulos generados con contador */
+.exp-item::before {
+  content: none !important;
+  display: none !important;
+}
+
+
+  /* ===================================================== */
+  /* =============== HABILIDADES ========================== */
+  /* ===================================================== */
+  .seccion-habilidades {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .seccion-habilidades h3.section-title-front {
+    display: block !important;
+    text-align: left !important;
+  }
+
+  .seccion-habilidades .col-md-6,
+  .seccion-habilidades .col-lg-4 {
+    page-break-inside: avoid !important;
+  }
+
+  /* ===================================================== */
+  /* =============== CERTIFICADOS ========================= */
+  /* ===================================================== */
+  .seccion-certificados {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .seccion-certificados ul {
+    page-break-inside: avoid !important;
+  }
+
+  .seccion-certificados li {
+    margin-bottom: 10px !important;
+    font-size: 11pt !important;
+  }
+
+  /* 🔹 Quitar enlaces de los certificados en impresión */
+  .seccion-certificados a {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+
+  /* ===================================================== */
+  /* =============== OTROS DATOS ========================== */
+  /* ===================================================== */
+  .seccion-otros {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  /* ===================================================== */
+  /* =============== REDES SOCIALES (enlaces visibles) ==== */
+  /* ===================================================== */
+  .contenedor-redes i {
+    display: none !important;
+  }
+
+  /* 🔹 Ocultar el texto original (el <span> que duplica el nombre) */
+  .contenedor-redes span {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .contenedor-redes a {
+    display: block !important;
+    color: #000 !important;
+    font-size: 11pt !important;
+    text-decoration: none !important;
+    margin-bottom: 6px !important;
+    font-weight: 500;
+  }
+
+  .contenedor-redes a[href*="linkedin.com/in/david-milanés/"]::before {
+    content: "LinkedIn: ";
+    font-weight: 700;
+  }
+
+  .contenedor-redes a[href*="x.com/Milan3s"]::before {
+    content: "Twitter: ";
+    font-weight: 700;
+  }
+
+  .contenedor-redes a[href*="github.com/Milan3s"]::before {
+    content: "GitHub: ";
+    font-weight: 700;
+  }
+
+  .contenedor-redes a::after {
+    content: attr(href);
+    font-weight: 400;
+    color: #333;
+  }
+
+  .contenedor-redes {
+    justify-content: center !important;
+    text-align: center !important;
+    flex-direction: column !important;
+    margin-top: 10px !important;
+  }
+
+
+  /* ===================================================== */
+  /* ============ SIN NÚMERO DE PÁGINA ============= */
+  /* ===================================================== */
+  body::after {
+    content: none !important;
+  }
+}
